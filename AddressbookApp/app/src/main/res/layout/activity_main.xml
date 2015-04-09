@@ -1,0 +1,59 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    tools:context=".MainActivity">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:id="@+id/tablerow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#000">
+
+        <TextView
+            android:id="@+id/contactTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts_title"
+            android:padding="@dimen/padding_5dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFF"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/button1"
+            android:background="#444444"
+            android:onClick="showAddContact"
+            android:textColor="#FFF"
+            android:padding="@dimen/padding_5dp"
+            android:text="@string/add_button"
+            android:textAppearance="?android:textAppearanceLarge"
+
+
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+        </ListView>
+
+    </TableRow>
+
+</TableLayout>
+</LinearLayout>
